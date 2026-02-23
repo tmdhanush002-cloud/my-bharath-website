@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="login-container">
+<h2>Healthcare Login</h2>
+
+
+<input type="text" id="userInput" placeholder="Email or Mobile Number">
+
+<div class="switch-buttons">
+  <button type="button" onclick="showPassword()">Password</button>
+  <button type="button" onclick="showOTP()">OTP</button>
+</div>
+
+<div id="passwordBox">
+  <input type="password" id="password" placeholder="Enter Password">
+</div>
+
+<div id="otpBox" style="display:none;">
+  <input type="text" id="otp" placeholder="Enter OTP">
+</div>
+
+
+<h3 class="role-title">Select Role</h3>
+
+<div class="roles">
+
+  <label class="role-card">
+    <input type="radio" name="role" value="patient">
+    <span>Patient</span>
+  </label>
+
+  <label class="role-card">
+    <input type="radio" name="role" value="doctor">
+    <span>Doctor</span>
+  </label>
+
+  <label class="role-card">
+    <input type="radio" name="role" value="clinic">
+    <span>Clinic</span>
+  </label>
+
+  <label class="role-card">
+    <input type="radio" name="role" value="police">
+    <span>Police</span>
+  </label>
+
+</div>
+
+<button onclick="login()">Login</button>
+</body>
+</html
